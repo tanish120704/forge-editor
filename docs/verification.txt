@@ -1,0 +1,17 @@
+✔ reads and saves actual files, retaining file permissions (5.615ms)
+✔ external edits cannot be overwritten by a stale editor (1.476ms)
+✔ concurrent writes using one revision produce a conflict (1.313583ms)
+✔ path traversal and symlinks outside workspace are rejected (0.951917ms)
+✔ new files never overwrite existing files; binaries are refused (1.253667ms)
+✔ workspace search gives real line/column positions and ignores dependencies (1.377625ms)
+✔ HTTP API requires token and rejects cross-origin mutations (23.969916ms)
+✔ Git paths remain relative to a workspace nested inside a repository (63.445125ms)
+✔ terminal runs a real shell in the chosen workspace (63.086833ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 229.496333

@@ -1,0 +1,52 @@
+{
+  "path": "/Applications/Visual Studio Code.app/Contents/Resources/app",
+  "version": "1.142.0",
+  "commit": "6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1",
+  "date": "2026-10-15T03:02:17Z",
+  "files": [
+    {
+      "path": "out/main.js",
+      "bytes": 100725,
+      "sha256": "91759d1d64d23437dd6642630826b91824e887ddba196f4bad137b1073b3e36c"
+    },
+    {
+      "path": "out/mainImpl.js",
+      "bytes": 1346110,
+      "sha256": "de52c425b7a31e033d0cacbd90b07e661b66e3deb45d0ec308dcade61ed4ae12"
+    },
+    {
+      "path": "out/bootstrap-fork.js",
+      "bytes": 125149,
+      "sha256": "abfae7811a0677404dcfef05311cf30c55cec45a50a7e2f1fa3bc54039992ca5"
+    },
+    {
+      "path": "out/vs/base/parts/sandbox/electron-browser/preload.js",
+      "bytes": 2287,
+      "sha256": "ab7c187d1d4f30cc794ed693159f9c8e4252d9ae961e4d9dc947d37d621ee14e"
+    },
+    {
+      "path": "out/vs/workbench/workbench.desktop.main.js",
+      "bytes": 20674895,
+      "sha256": "74de4ceb93610658c5eb15b64b228d085f25c9c95d6ec8b002f791df7be4614c"
+    },
+    {
+      "path": "out/vs/workbench/api/node/extensionHostProcess.js",
+      "bytes": 2306695,
+      "sha256": "5a315a781450d5cb95e45a9a50135cc73f2f6a51f89dd55e719672a16e272e44"
+    },
+    {
+      "path": "out/vs/platform/terminal/node/ptyHostMain.js",
+      "bytes": 400008,
+      "sha256": "0137808400f267fab435887fdf54e77c425cb86a6d3b33383a22339174a2d8bf"
+    }
+  ],
+  "extension_count": 96,
+  "selected_dependencies": {
+    "@parcel/watcher": "^2.5.6",
+    "@vscode/ripgrep-universal": "^1.18.0",
+    "@xterm/xterm": "^6.1.0-beta.304",
+    "node-pty": "^1.2.0-beta.15",
+    "vscode-oniguruma": "1.7.0",
+    "vscode-textmate": "^9.3.2"
+  }
+}

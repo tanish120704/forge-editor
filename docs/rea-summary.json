@@ -1,0 +1,84 @@
+{
+  "status": "partial-analysis-cleanup-unconfirmed",
+  "rea_version": "6.7.0",
+  "subject": {
+    "name": "app",
+    "digest": {
+      "sha256": "9a151e411db8cb1a11d09d0586f19a6dea389a6e4695490cb95b8ed63e5083a4"
+    },
+    "local_path": "/Applications/Visual Studio Code.app/Contents/Resources/app",
+    "format": "directory",
+    "architecture": null
+  },
+  "evidence_id": "ev_ecd59e4cbe59afde10224228e0ac4fa2f4818b8b3791b67099a3ceecbb3b5ed0",
+  "parameters": {
+    "format": "auto",
+    "integrity_policy": "fail",
+    "source_paths": [
+      "out/main.js",
+      "out/vs/base/parts/sandbox/electron-browser/preload.js",
+      "out/bootstrap-fork.js"
+    ],
+    "analysis_timeout_ms": 45000
+  },
+  "summary": {
+    "browser_windows": 0,
+    "explicit_web_preferences": 0,
+    "preload_entrypoints": 0,
+    "context_bridge_apis": 1,
+    "exposed_api_members": 6,
+    "ipc": {
+      "operations": 7,
+      "literal_channels": 1,
+      "dynamic_channel_operations": 6,
+      "renderer_transmissions": 4,
+      "renderer_listeners": 3,
+      "main_handlers": 0,
+      "paired_renderer_transmissions": 0,
+      "ambiguous_renderer_transmissions": 0,
+      "unpaired_literal_renderer_transmissions": 1
+    },
+    "sender_validation_observations": 0,
+    "utility_processes": 0,
+    "resolved_utility_entrypoints": 0,
+    "native_addon_bindings": 0,
+    "resolved_native_addon_bindings": 0
+  },
+  "statistics": {
+    "relevant_files": 6166,
+    "nested_asar_containers": 1,
+    "text_bytes_read": 228161,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 3,
+    "skipped_javascript_files": 0,
+    "visited_ast_nodes": 39063,
+    "findings": 52,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "source_selection": {
+    "requested_paths": [
+      "out/main.js",
+      "out/vs/base/parts/sandbox/electron-browser/preload.js",
+      "out/bootstrap-fork.js"
+    ],
+    "unselected_files": 6163
+  },
+  "limitations": [
+    "Caller-selected source analysis leaves 6163 inventoried files outside analysis scope. Inventory identity covers the complete artifact; relationships through unselected sources remain unknown.",
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Dynamic IPC channel expressions remain unresolved and are never paired by textual similarity.",
+    "Electron API identity follows proven lexical module aliases and structurally verified module-namespace interop. Other reassignments, dynamic selections, and visibly overwritten namespace members are unresolved; missing findings do not establish absence. Arbitrary call side effects and runtime registration are not evaluated.",
+    "Electron relationships are derived from inert syntax; runtime registration, reachability, defaults, and enforcement remain unproven.",
+    "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ],
+  "error": {
+    "code": "cleanup_incomplete",
+    "message": "Provider cleanup could not be fully confirmed. Review the reported local resources before opening another target.",
+    "reason": "macOS process table inspection denied by execution sandbox; worker cleanup could not be confirmed"
+  }
+}
